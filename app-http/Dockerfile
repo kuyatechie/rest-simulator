@@ -1,6 +1,6 @@
 FROM 10.12.14.138:9002/python:3.5-slim
 
-LABEL
+LABEL "Author"="Arvin.Cudanin" "Email"="arvin.cudanin@gmail.com"
 
 COPY apt.conf /etc/apt
 

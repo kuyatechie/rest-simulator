@@ -1,0 +1,22 @@
+version: '2'
+services:
+    flask-1:
+        build: ./app-http
+        command: python /app/app.py
+        privileged: true
+        volumes:
+            - $PWD/app:/app
+        expose:
+            - 8000
+
+    flask-2:
+        build: ./app-https
+        command: python /app/app.py
+        privileged: true
+        volumes:
+            - $PWD/app:/app
+        expose:
+            - 8001
+
+#    nginx:
+#        #put your configuration here

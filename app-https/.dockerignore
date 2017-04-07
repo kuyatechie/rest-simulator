@@ -1,0 +1,5 @@
+#exclude PyCharm files
+./*.idea
+
+#exclude git files
+./*.git
