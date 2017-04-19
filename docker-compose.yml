@@ -7,7 +7,7 @@ services:
         volumes:
             - $PWD/app-http:/app
         expose:
-            - 8000
+            - 8080
 
     flask-2:
         build: ./app-https
