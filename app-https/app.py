@@ -6,8 +6,8 @@ def hello():
     return "Hello World!"
 
 @app.route("/http-secured")
-def hello():
+def http():
     return "Successfully accessed secured HTTP!"
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=8081)

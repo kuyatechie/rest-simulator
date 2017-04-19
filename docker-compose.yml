@@ -5,7 +5,7 @@ services:
         command: python /app/app.py
         privileged: true
         volumes:
-            - $PWD/app:/app
+            - $PWD/app-http:/app
         expose:
             - 8000
 
@@ -14,9 +14,9 @@ services:
         command: python /app/app.py
         privileged: true
         volumes:
-            - $PWD/app:/app
+            - $PWD/app-https:/app
         expose:
-            - 8001
+            - 8081
 
 #    nginx:
-#        #put your configuration here
+#        put your configuration here
