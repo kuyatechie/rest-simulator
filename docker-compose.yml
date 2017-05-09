@@ -6,6 +6,8 @@ services:
         privileged: true
         volumes:
             - $PWD/app-http:/app
+        ports:
+            - 8080:8080
         expose:
             - 8080
 
@@ -15,6 +17,8 @@ services:
         privileged: true
         volumes:
             - $PWD/app-https:/app
+        ports:
+            - 8081
         expose:
             - 8081
 
